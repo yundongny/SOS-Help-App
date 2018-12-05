@@ -20,6 +20,14 @@
         <activity
             android:name=".ProfilePage"
             android:label="@string/title_activity_profile_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".JoinGroup"
+            android:label="@string/title_activity_join_group"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".createGroup"
+            android:label="@string/title_activity_create_group"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
