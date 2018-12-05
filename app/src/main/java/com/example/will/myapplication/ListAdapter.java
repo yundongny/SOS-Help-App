@@ -39,7 +39,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
             super(itemView);
             this.itemView = itemView;
             this.nameText = itemView.findViewById(R.id.nameTEXT);
-            this.classText = itemView.findViewbyId(R.id.classTEXT);
+            this.classText = itemView.findViewById(R.id.classTEXT);
             this.timeText = itemView.findViewById(R.id.timeTEXT);
             this.numberOfPeopleText = itemView.findViewById(R.id.peopleTEXT);
         }
