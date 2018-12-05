@@ -1,3 +1,4 @@
 <resources>
     <string name="SOS_Help_App">SOSHelpApp</string>
+    <string name="title_activity_profile_page">ProfilePage</string>
 </resources>
