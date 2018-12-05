@@ -8,24 +8,24 @@
     tools:layout_editor_absoluteY="81dp">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/giveHelpBtn"
         android:layout_width="99dp"
         android:layout_height="42dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton" />
+        android:text="Give Help"
+        app:layout_constraintBottom_toBottomOf="@+id/getHelpBtn"
+        app:layout_constraintEnd_toEndOf="@+id/ProfilePicture" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/getHelpBtn"
         android:layout_width="99dp"
         android:layout_height="42dp"
         android:layout_marginBottom="100dp"
-        android:text="Button"
+        android:text="Get Help"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageButton" />
+        app:layout_constraintStart_toStartOf="@+id/ProfilePicture" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/ProfilePicture"
         android:layout_width="251dp"
         android:layout_height="258dp"
         android:layout_marginStart="8dp"
