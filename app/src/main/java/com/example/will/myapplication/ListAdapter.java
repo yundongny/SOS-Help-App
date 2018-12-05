@@ -1,15 +1,19 @@
 package com.example.will.myapplication;
 
-import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
-    public ListAdapter() {
-        super();
+    private List<StudyGroupItem> studyGroupItemList;
+    public ListAdapter(StudyGroupItem[] List) {
+        this.studyGroupItemList = new ArrayList<>(Arrays.asList(List));
     }
 
     @NonNull
