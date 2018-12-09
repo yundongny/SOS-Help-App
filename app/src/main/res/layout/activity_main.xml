@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="81dp">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/giveHelpBtn"
-        android:layout_width="99dp"
-        android:layout_height="42dp"
-        android:text="Give Help"
-        app:layout_constraintBottom_toBottomOf="@+id/getHelpBtn"
-        app:layout_constraintEnd_toEndOf="@+id/ProfilePicture" />
-
-    <Button
-        android:id="@+id/getHelpBtn"
-        android:layout_width="99dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="100dp"
-        android:text="Get Help"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/ProfilePicture" />
-
-    <ImageButton
-        android:id="@+id/ProfilePicture"
-        android:layout_width="251dp"
-        android:layout_height="258dp"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/availableGroups"
+        android:layout_width="288dp"
+        android:layout_height="411dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/createGroupButton"
+        app:layout_constraintEnd_toEndOf="@+id/createGroupButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/createGroupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="309dp"
+        android:layout_marginLeft="309dp"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/availableGroups"
+        app:srcCompat="?android:attr/actionModeCopyDrawable"
+        android:focusable="true" />
 
 </android.support.constraint.ConstraintLayout>
