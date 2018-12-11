@@ -13,6 +13,13 @@ public class StudyGroupItem {
         this.numberOfPeople = 0;
     }
 
+    public StudyGroupItem(String name, String time, String subject, int numberOfPeople) {
+        this.name = name;
+        this.time = time;
+        this.subject = subject;
+        this.numberOfPeople = numberOfPeople;
+    }
+
     public String getName() {
         return name;
     }
